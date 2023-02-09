@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e0e0e;
+    padding: 0 20px;
+    margin: 0 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    gap: 30px;
+    background-color: #fff;
+}
+
+.sidebar {
+    background-image: url("sidebar-image.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 40%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 45%;
+    background-color: rgba(0, 1, 0, 0.5);
+    padding: 20px;
+}
+
+.sidebar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10%/25%;
+}
+
+.sidebar h1 {
+    color: #fff;
+    font-family: 'Norican';
+}
+
+.form-header {
+    /* background-color: pink; */
+    margin: 80px 100px 40px 0;
+    margin-top: 80px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.form-header p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 30px 20px;
+    /* background-color: lightblue; */
+}
+
+#form-title {
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: column wrap;
+
+    width: 40%;
+}
+
+input {
+    outline: none;
+    border: 1px solid #6F36FF;
+    box-shadow: 10px 5px 5px #6F36FF;
+}
+
+input:focus {
+    outline: none;
+    background-color: rgba(93, 120, 89, 0.5);
+    border: 1px solid blue;
+    box-shadow: 10px 5px 5px tomato;
+}
+
+#wrong_pass_alert {
+    width: 100%;
+}
+
+button {
+    padding: 10px 24px;
+    border-radius: 8px;
+    background-color: #596D48;
+    font-weight: bold;
+
+}
+
+button:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #6F36FF;
+}
+
+a {
+    text-decoration: none;
+}
