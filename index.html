@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="logo.jpg" alt="logo">
+                <h1>Microverse</h1>
+            </div>
+
+        </div>
+        <div class="form-section">
+            <div class="form-header">
+                <p>This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest
+                    dreams.</p>
+                <p>Sign up now to get started.</p>
+            </div>
+            <form action="" method="get">
+                <h4 id="form-title">Let's do this!</h4>
+                <div class="input">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="firstName" id="first-name" required>
+                </div>
+                <div class="input">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="lasttName" id="last-name" required>
+                </div>
+                <div class="input">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="Email" id="email" required>
+                </div>
+                <div class="input">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phoneNumber" id="phone" minlength="14" maxlength="14"
+                        placeholder="00923001234567" required>
+                </div>
+                <div class="input">
+                    <label for="pwd">Password</label>
+                    <input type="password" name="password" id="pwd" required"">
+                </div>
+                <div class="input">
+                    <label for="con-pwd">Confirm Password</label>
+                    <input type="password" name="con-pwd" id="con-pwd" onkeyup="validate_password()">
+                </div>
+                <div id="wrong_pass_alert"></div>
+
+                <button type="submit">Create Account</button>
+
+            </form>
+            <div>Already have an account? <a href="http://">Log in</a>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
